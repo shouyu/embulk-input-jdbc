@@ -45,7 +45,7 @@ public class JdbcInputConnection
         if (schemaName != null) {
             setSearchPath(schemaName);
         }
-        connection.setAutoCommit(false);
+        connection.setAutoCommit(true);
     }
 
     protected void setSearchPath(String schema) throws SQLException
